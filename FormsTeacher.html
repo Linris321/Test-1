@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Adoption Form</title>
+</head>
+<body>
+    <header>
+        <h1>Dog World</h1>
+        <h2>Dog Adoption Application</h2>
+        <p>Give a dog a loving home!</p>
+    </header>
+    <nav>
+        <a href="#personal">Personal Information</a> |
+        <a href="#adoption">Adoption Details</a> |
+        <a href="#comments">Additional Information</a>
+    </nav>
+    <hr>
+    <main>
+        <h2>Adoption Application Form</h2>
+        <p>
+            Please complete the following form
+            to apply for dog adoption.
+        </p>
+        <form action="#" method="get">
+            <fieldset id="personal">
+                <legend>Personal Information</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                <br><br>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                <br><br>    
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                <br><br>
+                <label for="age">Your Age:</label>
+                <input type="number" id="age" name="age" min="18" max="100" required>
+                <br><br>
+                <label for="date">Application Date:</label>
+                <input type="date" id="date" name="date">
+            </fieldset>
+            <br>
+            <fieldset id="adoption">
+                <legend>Adoption Details</legend>
+                <label for="dog">
+                    Which dog would you like to adopt?
+                </label>
+                <select id="dog" name="dog" required>
+                    <option value="">Select a dog</option>
+                    <option value="border-collie">
+                        Border Collie
+                    </option>
+                    <option value="golden-retriever">
+                        Golden Retriever
+                    </option>
+                    <option value="beagle">
+                        Beagle
+                    </option>
+                    <option value="husky">
+                        Siberian Husky
+                    </option>
+                    <option value="mixed">
+                        Mixed Breed
+                    </option>
+                </select>
+                <br><br>
+                <p>Have you owned a dog before?</p>
+                <input type="radio" id="yes" name="experience" value="yes" required>
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="experience" value="no">
+                <label for="no">No</label>
+                <br><br>
+                <p>What type of home do you live in?</p>
+                <input type="radio" id="house" name="home" value="house">
+                <label for="house">House</label>
+                <input type="radio" id="apartment" name="home" value="apartment">
+                <label for="apartment">Apartment</label>
+                <br><br>
+                <p>What do you have at home?</p>
+                <input type="checkbox" id="yard" name="features" value="yard">
+                <label for="yard">A backyard</label>
+                <br>
+                <input type="checkbox" id="pets" name="features" value="pets">
+                <label for="pets">Other pets</label>
+                <br>
+                <input type="checkbox" id="children" name="features" value="children">
+                <label for="children">Children</label>
+            </fieldset>
+            <br>
+            <fieldset id="comments">
+                <legend>Additional Information</legend>
+                <label for="reason">
+                    Why do you want to adopt a dog?
+                </label>
+                <br>
+                <textarea id="reason" name="reason" rows="5" cols="40" placeholder="Write your answer here..."
+                    required></textarea>
+                <br><br>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">
+                    I agree to the adoption terms.
+                </label>
+            </fieldset>
+            <br>
+            <button type="submit">
+                Submit Application
+            </button>
+            <button type="reset">
+                Clear Form
+            </button>
+        </form>
+    </main>
+    <hr>
+    <footer>
